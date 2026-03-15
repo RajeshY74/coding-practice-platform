@@ -12,10 +12,8 @@ const videoRouter = require("./routes/videoCreator");
 const cors = require('cors')
 
 // console.log("Hello")
-const cors = require("cors");
 
-app.use(
-  cors({
+app.use(cors({
     origin: [
       "http://localhost:5173",
       "https://coding-practice-platform-kuze.vercel.app",
