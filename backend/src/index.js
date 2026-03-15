@@ -13,10 +13,12 @@ const cors = require('cors')
 
 // console.log("Hello")
 
-app.use(cors({
-    origin: 'http://localhost:5173',
-    credentials: true 
-}))
+app.use(
+  cors({
+    origin: "https://coding-practice-platform-kuze.vercel.app/",
+    credentials: true,
+  }),
+);
 
 app.use(express.json());
 app.use(cookieParser());
